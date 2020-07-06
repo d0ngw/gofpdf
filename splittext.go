@@ -48,8 +48,6 @@ func (f *Fpdf) SplitText(txt string, w float64) (lines []string) {
 				l = 0
 			}
 			sep = -1
-			j = i
-			l = 0
 		} else {
 			i++
 		}

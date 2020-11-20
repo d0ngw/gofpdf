@@ -4,35 +4,35 @@
 Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 [![MIT
 licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/jung-kurt/gofpdf/master/LICENSE)
-[![Report](https://goreportcard.com/badge/github.com/jung-kurt/gofpdf)](https://goreportcard.com/report/github.com/jung-kurt/gofpdf)
-[![GoDoc](https://img.shields.io/badge/godoc-GoFPDF-blue.svg)](https://godoc.org/github.com/jung-kurt/gofpdf)
+[![Report](https://goreportcard.com/badge/github.com/d0ngw/gofpdf)](https://goreportcard.com/report/github.com/d0ngw/gofpdf)
+[![GoDoc](https://img.shields.io/badge/godoc-GoFPDF-blue.svg)](https://godoc.org/github.com/d0ngw/gofpdf)
 
-![](https://github.com/jung-kurt/gofpdf/raw/master/image/logo_gofpdf.jpg?raw=true)
+![](https://github.com/d0ngw/gofpdf/raw/master/image/logo_gofpdf.jpg?raw=true)
 
 Package gofpdf implements a PDF document generator with high level
 support for text, drawing and images.
 
 ## Features
 
-  - UTF-8 support
-  - Choice of measurement unit, page format and margins
-  - Page header and footer management
-  - Automatic page breaks, line breaks, and text justification
-  - Inclusion of JPEG, PNG, GIF, TIFF and basic path-only SVG images
-  - Colors, gradients and alpha channel transparency
-  - Outline bookmarks
-  - Internal and external links
-  - TrueType, Type1 and encoding support
-  - Page compression
-  - Lines, Bézier curves, arcs, and ellipses
-  - Rotation, scaling, skewing, translation, and mirroring
-  - Clipping
-  - Document protection
-  - Layers
-  - Templates
-  - Barcodes
-  - Charting facility
-  - Import PDFs as templates
+- UTF-8 support
+- Choice of measurement unit, page format and margins
+- Page header and footer management
+- Automatic page breaks, line breaks, and text justification
+- Inclusion of JPEG, PNG, GIF, TIFF and basic path-only SVG images
+- Colors, gradients and alpha channel transparency
+- Outline bookmarks
+- Internal and external links
+- TrueType, Type1 and encoding support
+- Page compression
+- Lines, Bézier curves, arcs, and ellipses
+- Rotation, scaling, skewing, translation, and mirroring
+- Clipping
+- Document protection
+- Layers
+- Templates
+- Barcodes
+- Charting facility
+- Import PDFs as templates
 
 gofpdf has no dependencies other than the Go standard library. All tests
 pass on Linux, Mac and Windows platforms.
@@ -56,7 +56,7 @@ continue to function without modification for a longer time than would
 be the case with many other languages.
 
 Forks should be based on the [last viable
-commit](https://github.com/jung-kurt/gofpdf/commit/603f56990463f011cb1dbb64ef7f872c1adc009a).
+commit](https://github.com/d0ngw/gofpdf/commit/603f56990463f011cb1dbb64ef7f872c1adc009a).
 Tools such as
 [active-forks](https://techgaun.github.io/active-forks/index.html#jung-kurt/gofpdf)
 can be used to select a fork that looks promising for your needs. If a
@@ -71,21 +71,21 @@ appreciated. Best wishes to all of you.
 
 To install the package on your system, run
 
-``` shell
-go get github.com/jung-kurt/gofpdf
+```shell
+go get github.com/d0ngw/gofpdf
 ```
 
 Later, to receive updates, run
 
-``` shell
-go get -u -v github.com/jung-kurt/gofpdf/...
+```shell
+go get -u -v github.com/d0ngw/gofpdf/...
 ```
 
 ## Quick Start
 
 The following Go code generates a simple PDF file.
 
-``` go
+```go
 pdf := gofpdf.New("P", "mm", "A4", "")
 pdf.AddPage()
 pdf.SetFont("Arial", "B", 16)
@@ -94,7 +94,7 @@ err := pdf.OutputFileAndClose("hello.pdf")
 ```
 
 See the functions in the
-[fpdf\_test.go](https://github.com/jung-kurt/gofpdf/blob/master/fpdf_test.go)
+[fpdf_test.go](https://github.com/d0ngw/gofpdf/blob/master/fpdf_test.go)
 file (shown as examples in this documentation) for more advanced PDF
 examples.
 
@@ -142,7 +142,7 @@ the tests complete.
 
 Please note that these examples run in the context of a test. In order
 run an example as a standalone application, you’ll need to examine
-[fpdf\_test.go](https://github.com/jung-kurt/gofpdf/blob/master/fpdf_test.go)
+[fpdf_test.go](https://github.com/d0ngw/gofpdf/blob/master/fpdf_test.go)
 for some helper routines, for example `exampleFilename()` and
 `summary()`.
 
@@ -181,7 +181,7 @@ and run “go build”. This will produce a standalone executable named
 makefont. Select the appropriate encoding file from the font
 subdirectory and run the command as in the following example.
 
-``` shell
+```shell
 ./makefont --embed --enc=../font/cp1252.map --dst=../font ../font/calligra.ttf
 ```
 
@@ -209,16 +209,16 @@ directory.
 
 Here are guidelines for making submissions. Your change should
 
-  - be compatible with the MIT License
-  - be properly documented
-  - be formatted with `go fmt`
-  - include an example in
-    [fpdf\_test.go](https://github.com/jung-kurt/gofpdf/blob/master/fpdf_test.go)
-    if appropriate
-  - conform to the standards of [golint](https://github.com/golang/lint)
-    and [go vet](https://golang.org/cmd/vet/), that is, `golint .` and
-    `go vet .` should not generate any warnings
-  - not diminish [test coverage](https://blog.golang.org/cover)
+- be compatible with the MIT License
+- be properly documented
+- be formatted with `go fmt`
+- include an example in
+  [fpdf_test.go](https://github.com/d0ngw/gofpdf/blob/master/fpdf_test.go)
+  if appropriate
+- conform to the standards of [golint](https://github.com/golang/lint)
+  and [go vet](https://golang.org/cmd/vet/), that is, `golint .` and
+  `go vet .` should not generate any warnings
+- not diminish [test coverage](https://blog.golang.org/cover)
 
 [Pull requests](https://help.github.com/articles/using-pull-requests/)
 are the preferred means of accepting your changes.
@@ -253,7 +253,7 @@ Felber provided implementations for dashed line drawing and generalized
 font loading. Stani Michiels provided support for multi-segment path
 drawing with smooth line joins, line join styles, enhanced fill modes,
 and has helped greatly with package presentation and tests. Templating
-is adapted by Marcus Downing from the FPDF\_Tpl library created by Jan
+is adapted by Marcus Downing from the FPDF_Tpl library created by Jan
 Slabon and Setasign. Jelmer Snoeck contributed packages that generate a
 variety of barcodes and help with registering images on the web. Jelmer
 Snoek and Guillermo Pascual augmented the basic HTML functionality with
@@ -278,5 +278,5 @@ times, and for file attachments and annotations.
 
 ## Roadmap
 
-  - Remove all legacy code page font support; use UTF-8 exclusively
-  - Improve test coverage as reported by the coverage tool.
+- Remove all legacy code page font support; use UTF-8 exclusively
+- Improve test coverage as reported by the coverage tool.

@@ -12,25 +12,25 @@ text, drawing and images.
 
 ## Features
 
-* UTF-8 support
-* Choice of measurement unit, page format and margins
-* Page header and footer management
-* Automatic page breaks, line breaks, and text justification
-* Inclusion of JPEG, PNG, GIF, TIFF and basic path-only SVG images
-* Colors, gradients and alpha channel transparency
-* Outline bookmarks
-* Internal and external links
-* TrueType, Type1 and encoding support
-* Page compression
-* Lines, Bézier curves, arcs, and ellipses
-* Rotation, scaling, skewing, translation, and mirroring
-* Clipping
-* Document protection
-* Layers
-* Templates
-* Barcodes
-* Charting facility
-* Import PDFs as templates
+- UTF-8 support
+- Choice of measurement unit, page format and margins
+- Page header and footer management
+- Automatic page breaks, line breaks, and text justification
+- Inclusion of JPEG, PNG, GIF, TIFF and basic path-only SVG images
+- Colors, gradients and alpha channel transparency
+- Outline bookmarks
+- Internal and external links
+- TrueType, Type1 and encoding support
+- Page compression
+- Lines, Bézier curves, arcs, and ellipses
+- Rotation, scaling, skewing, translation, and mirroring
+- Clipping
+- Document protection
+- Layers
+- Templates
+- Barcodes
+- Charting facility
+- Import PDFs as templates
 
 gofpdf has no dependencies other than the Go standard library. All tests pass
 on Linux, Mac and Windows platforms.
@@ -65,13 +65,13 @@ Best wishes to all of you.
 To install the package on your system, run
 
 ```shell
-go get github.com/jung-kurt/gofpdf
+go get github.com/d0ngw/gofpdf
 ```
 
 Later, to receive updates, run
 
 ```shell
-go get -u -v github.com/jung-kurt/gofpdf/...
+go get -u -v github.com/d0ngw/gofpdf/...
 ```
 
 ## Quick Start
@@ -191,14 +191,14 @@ directory directly beneath the `contrib` directory.
 
 Here are guidelines for making submissions. Your change should
 
-* be compatible with the MIT License
-* be properly documented
-* be formatted with `go fmt`
-* include an example in [fpdf_test.go][test] if appropriate
-* conform to the standards of [golint][lint] and
-[go vet][vet], that is, `golint .` and
-`go vet .` should not generate any warnings
-* not diminish [test coverage][coverage]
+- be compatible with the MIT License
+- be properly documented
+- be formatted with `go fmt`
+- include an example in [fpdf_test.go][test] if appropriate
+- conform to the standards of [golint][lint] and
+  [go vet][vet], that is, `golint .` and
+  `go vet .` should not generate any warnings
+- not diminish [test coverage][coverage]
 
 [Pull requests][pr] are the preferred means of accepting your changes.
 
@@ -253,36 +253,36 @@ for file attachments and annotations.
 
 ## Roadmap
 
-* Remove all legacy code page font support; use UTF-8 exclusively
-* Improve test coverage as reported by the coverage tool.
+- Remove all legacy code page font support; use UTF-8 exclusively
+- Improve test coverage as reported by the coverage tool.
 
 [badge-author]: https://img.shields.io/badge/author-Kurt_Jung-blue.svg
-[badge-doc]: https://img.shields.io/badge/godoc-GoFPDF-blue.svg 
+[badge-doc]: https://img.shields.io/badge/godoc-GoFPDF-blue.svg
 [badge-github]: https://img.shields.io/badge/project-Git_Hub-blue.svg
 [badge-mit]: https://img.shields.io/badge/license-MIT-blue.svg
 [badge-no-maintain]: http://unmaintained.tech/badge.svg
-[badge-report]: https://goreportcard.com/badge/github.com/jung-kurt/gofpdf
+[badge-report]: https://goreportcard.com/badge/github.com/d0ngw/gofpdf
 [badge-status]: https://travis-ci.org/jung-kurt/gofpdf.svg?branch=master
 [coverage]: https://blog.golang.org/cover
 [dfont]: http://dejavu-fonts.org/
 [draw2d-site]: https://github.com/llgcode/draw2d
-[effective-go]: https://golang.org/doc/effective_go.html 
+[effective-go]: https://golang.org/doc/effective_go.html
 [fpdf-site]: http://www.fpdf.org/
-[fpdf-test]: https://github.com/jung-kurt/gofpdf/blob/master/fpdf_test.go
+[fpdf-test]: https://github.com/d0ngw/gofpdf/blob/master/fpdf_test.go
 [gfont]: https://fonts.google.com/
-[github]: https://github.com/jung-kurt/gofpdf
-[godoc]: https://godoc.org/github.com/jung-kurt/gofpdf
+[github]: https://github.com/d0ngw/gofpdf
+[godoc]: https://godoc.org/github.com/d0ngw/gofpdf
 [gofpdf-fork]: https://techgaun.github.io/active-forks/index.html#jung-kurt/gofpdf
-[issue109]: https://github.com/jung-kurt/gofpdf/issues/109
+[issue109]: https://github.com/d0ngw/gofpdf/issues/109
 [jung]: https://github.com/jung-kurt/
-[last-commit]: https://github.com/jung-kurt/gofpdf/commit/603f56990463f011cb1dbb64ef7f872c1adc009a
+[last-commit]: https://github.com/d0ngw/gofpdf/commit/603f56990463f011cb1dbb64ef7f872c1adc009a
 [license]: https://raw.githubusercontent.com/jung-kurt/gofpdf/master/LICENSE
 [lint]: https://github.com/golang/lint
-[logo]: https://github.com/jung-kurt/gofpdf/raw/master/image/logo_gofpdf.jpg?raw=true
+[logo]: https://github.com/d0ngw/gofpdf/raw/master/image/logo_gofpdf.jpg?raw=true
 [noto]: https://github.com/jsntn/webfonts/blob/master/NotoSansSC-Regular.ttf
 [pr]: https://help.github.com/articles/using-pull-requests/
-[report]: https://goreportcard.com/report/github.com/jung-kurt/gofpdf
+[report]: https://goreportcard.com/report/github.com/d0ngw/gofpdf
 [status]: https://travis-ci.org/jung-kurt/gofpdf
-[test]: https://github.com/jung-kurt/gofpdf/blob/master/fpdf_test.go
+[test]: https://github.com/d0ngw/gofpdf/blob/master/fpdf_test.go
 [unmaintained]: http://unmaintained.tech/
 [vet]: https://golang.org/cmd/vet/

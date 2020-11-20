@@ -1682,29 +1682,16 @@ func (f *Fpdf) addFont(familyStr, styleStr, fileStr string, isUTF8 bool) {
 		if ok {
 			return
 		}
-		var ttfStat os.FileInfo
 		var err error
-		fileStr = path.Join(f.fontpath, fileStr)
-		ttfStat, err = os.Stat(fileStr)
-		if err != nil {
-			f.SetError(err)
-			return
-		}
-		originalSize := ttfStat.Size()
 		Type := "UTF8"
-		var utf8Bytes []byte
-		utf8Bytes, err = ioutil.ReadFile(fileStr)
+		fileStr = path.Join(f.fontpath, fileStr)
+		//utf8, err := loadUTF8FontFromFile(fileStr)
+		utf8File, originalSize, err := loadUTF8FontFromCache(fileStr)
 		if err != nil {
 			f.SetError(err)
 			return
 		}
-		reader := fileReader{readerPosition: 0, array: utf8Bytes}
-		utf8File := newUTF8Font(&reader)
-		err = utf8File.parseFile()
-		if err != nil {
-			f.SetError(err)
-			return
-		}
+		//utf8File, originalSize := utf8.file, utf8.originalSize
 
 		desc := FontDescType{
 			Ascent:       int(utf8File.Ascent),
